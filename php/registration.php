@@ -15,18 +15,22 @@ $nickname=$_POST['nick'];
 if(check_login($login)==1){
     exit('Такой логин уже существует');
 }
-if(check_password==1){
+if(check_password($password,$repassword)==1){
     exit('Пароль и повторный пароль не совпадают');
 }
+
+registration_user($login,$password,$nickname);
 
 echo 'Зарегано!';
 
 function registration_user($login,$password,$nickname){
-
+    $mysqli=new mysqli('localhost','root','9340126abc','chat');
+    $query="INSERT INTO users VALUES ('0','".$login."','".$password."','".$nickname."')";
+    $result=$mysqli->query($query);
 }
 
 function check_password($pass,$repass){
-    if($pass==$repass) return 0;
+    if($pass==$repass or $pass=='' or $repass=='') return 0;
     return 1;
 }
 
@@ -38,9 +42,12 @@ function check_login($login){
 
     $getLogin=$row[1];
 
-    if($getLogin!=$login){
+    if($getLogin==$login){
+        $mysqli->close();
         return 1;
+
        // exit('Введёт не верный логин');
     }
+    $mysqli->close();
     return 0;
 }
