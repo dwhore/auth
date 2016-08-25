@@ -6,10 +6,14 @@
  * Time: 14:59
  */
 
+session_start();
+
+
 $login= $_POST['login'];
 $password= $_POST['pass'];
 $repassword=$_POST['repass'];
 $nickname=$_POST['nick'];
+
 
 
 if(check_login($login)==1){
@@ -20,6 +24,8 @@ if(check_password($password,$repassword)==1){
 }
 
 registration_user($login,$password,$nickname);
+
+
 
 echo 'Зарегано!';
 

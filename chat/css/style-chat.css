@@ -1,0 +1,8 @@
+#wrapper{
+    background-color: aquamarine;
+    width: 300px;
+}
+#wrapper_messages{
+    height: 250px;
+    overflow: auto;
+}

@@ -5,6 +5,7 @@
  * Date: 21.08.16
  * Time: 2:11
  */
+session_start();
 
 $login=$_POST['login'];
 $password=$_POST['pass'];
@@ -13,10 +14,14 @@ if(empty($login) or empty($password)){
     exit('Вы ввели не всю информацию , вернитесь назад');
 }
 
+$_SESSION["login"]=$login;
+$_SESSION["pass"]=$password;
 
 
 if(checkUser($login,$password)==0){
-    echo 'Вы зашли!';
+    header('Location:/chat/chat.php');
+    echo 'Вы зашли! '.$_SESSION['nick'];
+
 }
 else if(checkUser($login,$password)==1){
     exit('Введёт не верный логин');
