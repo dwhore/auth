@@ -8,9 +8,8 @@
     <div id="wrapper">
         <div id="wrapper_chat">
             <div id="wrapper_messages">
-                <ul>
-                    <li>Первое сообщение</li>
-                    <li>Второе сообщение</li>
+                <ul id="content">
+
                 </ul>
             </div>
 

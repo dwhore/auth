@@ -6,3 +6,11 @@
     height: 250px;
     overflow: auto;
 }
+.nick{
+    font-family: Impact;
+    color: #ff0000;
+}
+.message{
+    font-family: "Courier New";
+    color:#0000ff
+}

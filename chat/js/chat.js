@@ -13,9 +13,24 @@ $(document).ready(function () {
            data:{msg:message},
            success:function (data) {
                console.log(data);
+               $("#content").html("");
+               $("#content").html(data);
            }
         });
     });
+
+    setInterval(function () {
+        $.ajax({
+            url:'/chat/php/chat-action-refresh.php',
+            type:'POST',
+            data:{},
+            success:function (data) {
+                console.log(data);
+                $("#content").html("");
+                $("#content").html(data);
+            }
+        });
+    },1000);
 });
 
 

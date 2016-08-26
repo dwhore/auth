@@ -7,7 +7,7 @@
  */
 session_start();
 $message=$_POST['msg'];
-$nickname=getUserNick($_SESSION['login']);
+$nickname=getUserNickByLogin($_SESSION['login']);
 
 saveMessage(getUserId($_SESSION['login']),$message);
 
@@ -15,9 +15,10 @@ $count=getMessages();
 
 
 
-echo $nickname. ': ' .$message. ' Msgs: ' .$count;
+//echo $nickname. ': ' .$message. ' Msgs: ' .$count;
+echo "";
 
-function getUserNick($login){
+function getUserNickByLogin($login){
     $mysqli=new mysqli('localhost','root','9340126abc','chat');
     $query="SELECT name FROM users WHERE login='".$login."'";
     $result=$mysqli->query($query);
@@ -26,6 +27,17 @@ function getUserNick($login){
 
     return $nickname;
 }
+
+function getUserNickByUserId($id){
+    $mysqli=new mysqli('localhost','root','9340126abc','chat');
+    $query="SELECT name FROM users WHERE id_key='".$id."'";
+    $result=$mysqli->query($query);
+    $row=$result->fetch_array(MYSQLI_NUM);
+    $nickname=$row[0];
+
+    return $nickname;
+}
+
 function getUserId($login){
     $mysqli=new mysqli('localhost','root','9340126abc','chat');
     $query="SELECT id_key FROM users WHERE login='".$login."'";
@@ -48,9 +60,8 @@ function getMessages(){
     $result=$mysqli->query($query);
     $data="gg";
     while($row=$result->fetch_assoc()){
-        print($row['id_user'].": ".$row['msg']);
+        printf('<li><a class="nick">%s</a>: <a class="message">%s</a></li><br>', getUserNickByUserId($row['id_user']),$row['msg']);
     }
-
 
     return $data;
 }
