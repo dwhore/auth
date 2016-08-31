@@ -5,6 +5,13 @@
     <title>chat</title>
 </head>
 <body>
+    <h2 id="yourname">
+        <?php
+            session_start();
+            echo 'Вы вошли как (' .$_SESSION['login']. ')';
+        
+        ?>
+    </h2>
     <div id="wrapper">
         <div id="wrapper_chat">
             <div id="wrapper_messages">

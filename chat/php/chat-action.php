@@ -11,6 +11,8 @@ $nickname=getUserNickByLogin($_SESSION['login']);
 
 saveMessage(getUserId($_SESSION['login']),$message);
 
+
+
 $count=getMessages();
 
 

@@ -15,6 +15,7 @@ $(document).ready(function () {
                console.log(data);
                $("#content").html("");
                $("#content").html(data);
+               $("#text").val('');
            }
         });
     });
