@@ -12,6 +12,9 @@
         
         ?>
     </h2>
+    <div id="menu">
+        <a href="../menu/profile.html">профиль</a>
+    </div>
     <div id="wrapper">
         <div id="wrapper_chat">
             <div id="wrapper_messages">
