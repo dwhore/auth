@@ -33,7 +33,7 @@ else if(checkUser($login,$password)==2){
 
 function checkUser($login , $pass){
     //$mysqli=new mysqli('localhost','root','9340126abc','chat');
-    $mysqli=new mysqli('free9.beget.com','k96147i6_dwor','dwor2016','k96147i6_dwor');
+    $mysqli=new mysqli('87.236.19.44','k96147i6_dwor','dwor2016','k96147i6_dwor');
     $query="SELECT * FROM users WHERE login='".$login."'";
     $result=$mysqli->query($query);
     $row=$result->fetch_array(MYSQLI_NUM); //преобразование в массив строку
