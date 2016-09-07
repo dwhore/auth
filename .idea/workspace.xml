@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcf2ea84-9b8f-4e09-9a48-891dd7de15b5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menu/js/profile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menu/php/save_data.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/menu/loaddata.php" afterPath="$PROJECT_DIR$/menu/php/loaddata.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/menu/profile.html" afterPath="$PROJECT_DIR$/menu/profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/chat.php" afterPath="$PROJECT_DIR$/chat/chat.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/js/chat.js" afterPath="$PROJECT_DIR$/chat/js/chat.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/check_user.php" afterPath="$PROJECT_DIR$/php/check_user.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/menu/js/profile.js" afterPath="$PROJECT_DIR$/menu/js/profile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/menu/profile.php" afterPath="$PROJECT_DIR$/menu/profile.php" />
     </list>
     <ignored path="authorization.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -112,14 +106,14 @@
       <file leaf-file-name="profile.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/menu/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            <state relative-caret-position="252">
+              <caret line="14" column="81" selection-start-line="14" selection-start-column="81" selection-end-line="14" selection-end-column="81" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="save_data.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="save_data.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/menu/php/save_data.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
@@ -141,8 +135,8 @@
       <file leaf-file-name="profile.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/menu/js/profile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+            <state relative-caret-position="522">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
@@ -150,7 +144,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loaddata.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="loaddata.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/menu/php/loaddata.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
@@ -242,9 +236,9 @@
         <option value="$PROJECT_DIR$/chat/js/chat.js" />
         <option value="$PROJECT_DIR$/menu/profile.html" />
         <option value="$PROJECT_DIR$/menu/php/loaddata.php" />
+        <option value="$PROJECT_DIR$/menu/php/save_data.php" />
         <option value="$PROJECT_DIR$/menu/profile.php" />
         <option value="$PROJECT_DIR$/menu/js/profile.js" />
-        <option value="$PROJECT_DIR$/menu/php/save_data.php" />
       </list>
     </option>
   </component>
@@ -503,12 +497,12 @@
       <workItem from="1472730404702" duration="79000" />
       <workItem from="1473116207421" duration="2594000" />
       <workItem from="1473190121264" duration="1763000" />
-      <workItem from="1473202907268" duration="9034000" />
+      <workItem from="1473202907268" duration="10027000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55484000" />
+    <option name="totallyTimeSpent" value="56477000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1985" y="24" width="1855" height="1056" extended-state="6" />
@@ -940,24 +934,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/menu/js/profile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/menu/profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/socketphptest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -978,14 +954,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/menu/php/loaddata.php">
+    <entry file="file://$PROJECT_DIR$/menu/profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding>
-            <marker date="1473205661464" expanded="true" signature="308:321" ph="SELECT name " />
-            <marker date="1473205661464" expanded="true" signature="308:352" ph="SELECT * FRO... users" />
-          </folding>
+        <state relative-caret-position="252">
+          <caret line="14" column="81" selection-start-line="14" selection-start-column="81" selection-end-line="14" selection-end-column="81" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1002,6 +975,27 @@
             <marker date="1473211538221" expanded="true" signature="310:401" ph="UPDATE users... " />
             <marker date="1473211538221" expanded="true" signature="310:540" ph="UPDATE users... " />
             <marker date="1473211538221" expanded="true" signature="418:482" ph="UPDATE users... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu/js/profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu/php/loaddata.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding>
+            <marker date="1473205661464" expanded="true" signature="308:321" ph="SELECT name " />
+            <marker date="1473205661464" expanded="true" signature="308:352" ph="SELECT * FRO... users" />
           </folding>
         </state>
       </provider>
