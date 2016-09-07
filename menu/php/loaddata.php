@@ -10,7 +10,7 @@ session_start();
 $login=$_SESSION['login'];
 
 getData($login);
-
+echo json_encode(getData($login));
 function getData($login){
 
     $data=array();
@@ -19,5 +19,5 @@ function getData($login){
     $query="SELECT * FROM users WHERE login='".$login."'";
     $result=$mysqli->query($query);
     $row=$result->fetch_array();
-    echo $row.count();
+    return $row;
 }

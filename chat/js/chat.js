@@ -20,6 +20,7 @@ $(document).ready(function () {
         });
     });
 
+
     setInterval(function () {
         $.ajax({
             url:'/chat/php/chat-action-refresh.php',

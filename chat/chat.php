@@ -13,7 +13,7 @@
         ?>
     </h2>
     <div id="menu">
-        <a href="../menu/profile.html">профиль</a>
+        <a href="../menu/profile.php" id="profile">профиль</a>
     </div>
     <div id="wrapper">
         <div id="wrapper_chat">
